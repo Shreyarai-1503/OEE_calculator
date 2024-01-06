@@ -35,26 +35,16 @@ print('Lets compare its OEE for 4 months')
 info=['Availability','Performance','Quality','Total OEE']
 col=['Red','Blue','Orange','Green']
 
-#Importing the files
+#Ploting
 A=read_and_plot("April")
-
-print('Do you want to know about other records too?')
-print('Y for Yes')
-print('N for No')
-x=input('Enter your option:')
-print('----'*20)
-if x=='Y':
- M = read_and_plot("May")
- print()
- 
- JN = read_and_plot("June")
- print()
- 
- JL = read_and_plot("July")
-
-
- print('We can see the diversity in losses for the above months')
- print('By looking at the graph we can know about the reasons for the losses in the following months and that is the main idea of OEE')
+print()
+M = read_and_plot("May")
+print()
+JN = read_and_plot("June")
+print()
+JL = read_and_plot("July")
+print('We can see the diversity in losses for the above months')
+print('By looking at the graph we can know about the reasons for the losses in the following months and that is the main idea of OEE')
 
 print("Okay, now let's have a look at the final comparison of OEE of all the months\n")
 print() 
